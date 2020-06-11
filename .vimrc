@@ -1,12 +1,18 @@
+" editing "
 set number
 set hlsearch
-set background=dark
-set tabstop=4
 set incsearch
 set splitright
+syntax enable 
+
+" tabulation "
+set tabstop=4
+set shiftwidth=4
+set expandtab
 set autoindent
 
-syntax enable 
+" colours "
+set background=dark
 colorscheme gruvbox
 
 " Latex "
