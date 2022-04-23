@@ -6,6 +6,7 @@ set splitright  " vertical split opens file to right (default is left)
 set splitbelow  " split opens file below (default is above)
 set visualbell  " flash screen instead of beeping when error occurs
 set t_vb=       " set flash length to 0 (flashing + beeping disabled)
+set showcmd     " show info on current command at bottom right of window
 syntax enable   " pretty and colourful
 
 " tabulation "
