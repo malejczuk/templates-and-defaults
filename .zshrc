@@ -13,3 +13,19 @@ RPROMPT='[%F{yellow}%?%f]' # shows result of last command
 # fuzzy finder (https://github.com/junegunn/fzf)
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/kristoff/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/kristoff/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/kristoff/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/kristoff/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# run "conda config --set auto_activate_base false" on command line to disable auto-activation of base env
+# <<< conda initialize <<<
+
