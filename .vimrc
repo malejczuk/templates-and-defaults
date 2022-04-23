@@ -21,4 +21,4 @@ set background=dark
 colorscheme gruvbox " colorscheme copied from https://github.com/morhetz/gruvbox (gruvbox.vim must be placed in ~/.vim/colors/)
 
 " Latex "
-" command Tex w | exe "silent! !pdflatex --shell-escape %" | redraw!
+command Tex w | exe "silent! !pdflatex --shell-escape %" | redraw!
