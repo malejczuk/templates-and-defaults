@@ -1,17 +1,15 @@
-# legacy
-source ~/.bash_profile # conda setup and Python PATH export
-
 # settings
-bindkey \^U backward-kill-line # bash default
-unsetopt BEEP # disable bells
-
-# aliasing
-alias matlab='/Applications/MATLAB_R2017a.app/bin/matlab -nodesktop -nosplash $*'
+bindkey \^U backward-kill-line      # CTRL+U kills from cursor to beginning of line
+unsetopt BEEP                       # disable bells
+alias copy="tr -d '\n' | pbcopy"    # copy alias copies output without adding newline
 
 # PROMPT (pick one)
-PROMPT='%B%F{green}i%f%F{white}-%f%F{yellow}rip%f%F{white}-%f%F{magenta}sick%f%F{white}-%f%F{cyan}lines%f%b:%1~ $ ' # Squaw Valley, IYKYK
-# PROMPT='%B%F{green}i%f%F{black}-%f%F{yellow}feel%f%F{black}-%f%F{magenta}like%f%F{black}-%f%F{cyan}Pablo%f%b:%1~ $ '
-# PROMPT='%B%F{green}G%f%F{magenta}N%f%F{yellow}A%f%F{cyan}R%f%b:%1~ $ '
+PROMPT='%B%F{green}i%f%F{white}-%f%F{yellow}rip%f%F{white}-%f%F{magenta}sick%f%F{white}-%f%F{cyan}lines%f%b:%1~ $ ' # Palisades Tahoe
+# PROMPT='%B%F{green}i%f%F{black}-%f%F{yellow}feel%f%F{black}-%f%F{magenta}like%f%F{black}-%f%F{cyan}Pablo%f%b:%1~ $ ' # Kanye
 
 # RPROMPT
 RPROMPT='[%F{yellow}%?%f]' # shows result of last command
+
+# fuzzy finder (https://github.com/junegunn/fzf)
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
