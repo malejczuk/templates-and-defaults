@@ -14,6 +14,8 @@ RPROMPT='[%F{yellow}%?%f]' # shows result of last command
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # >>> conda initialize >>>
+# install conda (https://docs.conda.io/projects/conda/en/latest/user-guide/install/macos.html)
+# do not use homebrew!
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/Users/kristoff/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
